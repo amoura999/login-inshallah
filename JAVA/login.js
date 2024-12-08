@@ -157,11 +157,11 @@ if (document.body.contains(document.getElementById("welcome-message"))) {
   if (currentUser && currentUser.upname) {
     usernameElement.textContent = currentUser.upname;
   } else {
-    window.location.href = "../LogIn.html";
+    window.location.href = "../index.html";
   }
 
   logoutButton.addEventListener("click", function () {
     localStorage.removeItem("CurrentUser");
-    window.location.href = "../LogIn.html";
+    window.location.href = "../index.html";
   });
 }
